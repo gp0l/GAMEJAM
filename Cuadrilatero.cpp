@@ -1,11 +1,11 @@
-#include "Triangulo.h"
+#include "Cuadrilatero.h"
 
 
-Triangulo::Triangulo(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
+Cuadrilatero::Cuadrilatero(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
     : Poligono(x, y, ancho, alto, 3, movimeintoAutomatico) {
 }
 
-void Triangulo::dibujar(Graphics^ graphics) {
+void Cuadrilatero::dibujar(Graphics^ graphics) {
     Color colorDelCuerpo;
     if (color == 1) {
         colorDelCuerpo = Color::Red;
@@ -15,7 +15,7 @@ void Triangulo::dibujar(Graphics^ graphics) {
     }
     else {
         colorDelCuerpo = Color::Blue;
-	}
+    }
 
     array<Point>^ puntos = gcnew array<Point>(3);
     puntos[0] = Point(x + ancho / 2, y);           // Punto superior (centro)
@@ -25,7 +25,7 @@ void Triangulo::dibujar(Graphics^ graphics) {
     SolidBrush^ brush = gcnew SolidBrush(colorDelCuerpo);
     graphics->FillPolygon(brush, puntos);
 
-    // Dibujar nÃºmero en el centro
+    // Dibujar número en el centro
     if (numero > 0) {
         String^ texto = numero.ToString();
         Font^ font = gcnew Font("Arial", 14, FontStyle::Bold);

@@ -117,6 +117,7 @@
     <ClCompile Include="Circulo.cpp" />
     <ClCompile Include="CompetenciaService.cpp" />
     <ClCompile Include="Cuadrado.cpp" />
+    <ClCompile Include="Cuadrilatero.cpp" />
     <ClCompile Include="Figura.cpp" />
     <ClCompile Include="FigurasService.cpp" />
     <ClCompile Include="FrmCompetencia.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Circulo.h" />
     <ClInclude Include="CompetenciaService.h" />
     <ClInclude Include="Cuadrado.h" />
+    <ClInclude Include="Cuadrilatero.h" />
     <ClInclude Include="Figura.h" />
     <ClInclude Include="FigurasService.h" />
     <ClInclude Include="FrmCompetencia.h">

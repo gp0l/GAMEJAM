@@ -6,6 +6,6 @@ using namespace System::Drawing;
 
 class Triangulo : public Poligono {
 public:
-    Triangulo(int x, int y, int ancho, int alto, int r, int g, int b, bool relleno);
+    Triangulo(int x, int y, int ancho, int alto, bool movimientoAutomatico);
     void dibujar(Graphics^ graphics) override;
 };
