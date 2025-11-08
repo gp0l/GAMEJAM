@@ -2,7 +2,7 @@
 #include <cmath>
 
 Eneagono::Eneagono(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 9, movimeintoAutomatico) {
+    : Figura(x, y, ancho, alto, 9, movimeintoAutomatico) {
 }
 
 void Eneagono::dibujar(Graphics^ graphics) {

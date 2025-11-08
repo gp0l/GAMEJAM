@@ -1,8 +1,8 @@
 #pragma once
-#include "Poligono.h"
+#include "Figura.h"
 #include <cmath>
 class Pentagono :
-    public Poligono
+    public Figura
 {
 public:
     Pentagono(int x, int y, int ancho, int alto, bool movimientoAutomatico);

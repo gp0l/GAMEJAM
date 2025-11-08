@@ -113,14 +113,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Casa.cpp" />
     <ClCompile Include="Circulo.cpp" />
     <ClCompile Include="CompetenciaService.cpp" />
-    <ClCompile Include="Cuadrado.cpp" />
     <ClCompile Include="Cuadrilatero.cpp" />
     <ClCompile Include="Decagono.cpp" />
     <ClCompile Include="Eneagono.cpp" />
-    <ClCompile Include="Figura.cpp" />
     <ClCompile Include="FigurasService.cpp" />
     <ClCompile Include="FrmCompetencia.cpp" />
     <ClCompile Include="FrmFiguras.cpp" />
@@ -129,14 +126,11 @@
     <ClCompile Include="Heptagono.cpp" />
     <ClCompile Include="Hexagono.cpp" />
     <ClCompile Include="JuegoService.cpp" />
-    <ClCompile Include="Linea.cpp" />
     <ClCompile Include="MovimientoCasaService.cpp" />
     <ClCompile Include="Octagono.cpp" />
     <ClCompile Include="Pentagono.cpp" />
-    <ClCompile Include="Poligono.cpp" />
+    <ClCompile Include="Figura.cpp" />
     <ClCompile Include="Principal.cpp" />
-    <ClCompile Include="Rectangulo.cpp" />
-    <ClCompile Include="Rombo.cpp" />
     <ClCompile Include="Triangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -147,14 +141,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Casa.h" />
     <ClInclude Include="Circulo.h" />
     <ClInclude Include="CompetenciaService.h" />
-    <ClInclude Include="Cuadrado.h" />
     <ClInclude Include="Cuadrilatero.h" />
     <ClInclude Include="Decagono.h" />
     <ClInclude Include="Eneagono.h" />
-    <ClInclude Include="Figura.h" />
     <ClInclude Include="FigurasService.h" />
     <ClInclude Include="FrmCompetencia.h">
       <FileType>CppForm</FileType>
@@ -171,13 +162,10 @@
     <ClInclude Include="Heptagono.h" />
     <ClInclude Include="Hexagono.h" />
     <ClInclude Include="JuegoService.h" />
-    <ClInclude Include="Linea.h" />
     <ClInclude Include="MovimientoCasaService.h" />
     <ClInclude Include="Octagono.h" />
     <ClInclude Include="Pentagono.h" />
-    <ClInclude Include="Poligono.h" />
-    <ClInclude Include="Rectangulo.h" />
-    <ClInclude Include="Rombo.h" />
+    <ClInclude Include="Figura.h" />
     <ClInclude Include="Triangulo.h" />
   </ItemGroup>
   <ItemGroup>

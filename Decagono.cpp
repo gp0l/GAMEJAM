@@ -2,7 +2,7 @@
 #include <cmath>
 
 Decagono::Decagono(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 10, movimeintoAutomatico) {
+    : Figura(x, y, ancho, alto, 10, movimeintoAutomatico) {
 }
 
 void Decagono::dibujar(Graphics^ graphics) {

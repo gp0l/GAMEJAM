@@ -1,7 +1,7 @@
 #include "Octagono.h"
 #include <cmath>
 Octagono::Octagono(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 8, movimeintoAutomatico) {
+    : Figura(x, y, ancho, alto, 8, movimeintoAutomatico) {
 }
 
 void Octagono::dibujar(Graphics^ graphics) {

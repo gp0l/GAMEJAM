@@ -1,7 +1,7 @@
 #pragma once
-#include "Poligono.h"
+#include "Figura.h"
 class Octagono :
-    public Poligono
+    public Figura
 {
 public:
     Octagono(int x, int y, int ancho, int alto, bool movimientoAutomatico);

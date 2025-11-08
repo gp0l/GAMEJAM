@@ -1,7 +1,7 @@
 #include "Pentagono.h"
 #include <cmath>
 Pentagono::Pentagono(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 5, movimeintoAutomatico) {
+    : Figura(x, y, ancho, alto, 5, movimeintoAutomatico) {
 }
 
 void Pentagono::dibujar(Graphics^ graphics) {

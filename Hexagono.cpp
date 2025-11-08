@@ -1,7 +1,7 @@
 #include "Hexagono.h"
 #include <cmath>
 Hexagono::Hexagono(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 6, movimeintoAutomatico) {
+    : Figura(x, y, ancho, alto, 6, movimeintoAutomatico) {
 }
 
 void Hexagono::dibujar(Graphics^ graphics) {

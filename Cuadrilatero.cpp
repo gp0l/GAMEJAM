@@ -2,7 +2,7 @@
 
 
 Cuadrilatero::Cuadrilatero(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 4, movimeintoAutomatico) {
+    : Figura(x, y, ancho, alto, 4, movimeintoAutomatico) {
 }
 
 void Cuadrilatero::dibujar(Graphics^ graphics) { 
@@ -38,4 +38,5 @@ void Cuadrilatero::dibujar(Graphics^ graphics) {
         float centroY = y + alto * 2 / 3.0f - tamanioTexto.Height / 2;
         graphics->DrawString(texto, font, brushTexto, centroX, centroY);
     }
+    delete brush;
 }
