@@ -2,7 +2,7 @@
 
 
 Circulo::Circulo(int x, int y, int Diametro, bool movimeintoAutomatico)
-    : Figura(x, y, Diametro, Diametro,movimeintoAutomatico) {
+    : Figura(x, y, Diametro, Diametro, 0, movimeintoAutomatico) {
 }
 
 void Circulo::dibujar(Graphics^ graphics) {
