@@ -63,18 +63,20 @@ namespace Semana10 {
 			// panelDibujo
 			// 
 			this->panelDibujo->BackColor = System::Drawing::Color::White;
-			this->panelDibujo->Location = System::Drawing::Point(12, 60);
+			this->panelDibujo->Location = System::Drawing::Point(18, 92);
+			this->panelDibujo->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panelDibujo->Name = L"panelDibujo";
-			this->panelDibujo->Size = System::Drawing::Size(1020, 500);
+			this->panelDibujo->Size = System::Drawing::Size(1530, 769);
 			this->panelDibujo->TabIndex = 0;
 			this->panelDibujo->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &FrmCompetencia::panelDibujo_Paint);
 			// 
 			// btnIniciar
 			// 
 			this->btnIniciar->Font = (gcnew System::Drawing::Font(L"Arial", 12));
-			this->btnIniciar->Location = System::Drawing::Point(12, 12);
+			this->btnIniciar->Location = System::Drawing::Point(18, 18);
+			this->btnIniciar->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btnIniciar->Name = L"btnIniciar";
-			this->btnIniciar->Size = System::Drawing::Size(150, 40);
+			this->btnIniciar->Size = System::Drawing::Size(225, 62);
 			this->btnIniciar->TabIndex = 1;
 			this->btnIniciar->Text = L"Iniciar Competencia";
 			this->btnIniciar->UseVisualStyleBackColor = true;
@@ -84,9 +86,10 @@ namespace Semana10 {
 			// 
 			this->lblResultado->AutoSize = true;
 			this->lblResultado->Font = (gcnew System::Drawing::Font(L"Arial", 14, System::Drawing::FontStyle::Bold));
-			this->lblResultado->Location = System::Drawing::Point(400, 20);
+			this->lblResultado->Location = System::Drawing::Point(600, 31);
+			this->lblResultado->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblResultado->Name = L"lblResultado";
-			this->lblResultado->Size = System::Drawing::Size(0, 22);
+			this->lblResultado->Size = System::Drawing::Size(0, 33);
 			this->lblResultado->TabIndex = 3;
 			// 
 			// label1
@@ -94,23 +97,26 @@ namespace Semana10 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(13, 585);
+			this->label1->Location = System::Drawing::Point(20, 900);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(374, 18);
+			this->label1->Size = System::Drawing::Size(576, 29);
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"Desarrollado por Henry Antonio Mendoza Puerta";
 			// 
 			// FrmCompetencia
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1051, 610);
+			this->ClientSize = System::Drawing::Size(1576, 938);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->lblResultado);
 			this->Controls->Add(this->btnIniciar);
 			this->Controls->Add(this->panelDibujo);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"FrmCompetencia";
 			this->Text = L"Competencia de Figuras";
+			this->Load += gcnew System::EventHandler(this, &FrmCompetencia::FrmCompetencia_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -163,5 +169,7 @@ namespace Semana10 {
 	private: System::Void panelDibujo_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 		//competenciaService->dibujar(graphics);
 	}
-	};
+	private: System::Void FrmCompetencia_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }

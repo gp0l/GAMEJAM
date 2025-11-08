@@ -1,11 +1,11 @@
-#include "Cuadrilatero.h"
+#include "Eneagono.h"
+#include <cmath>
 
-
-Cuadrilatero::Cuadrilatero(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
-    : Poligono(x, y, ancho, alto, 4, movimeintoAutomatico) {
+Eneagono::Eneagono(int x, int y, int ancho, int alto, bool movimeintoAutomatico)
+    : Poligono(x, y, ancho, alto, 9, movimeintoAutomatico) {
 }
 
-void Cuadrilatero::dibujar(Graphics^ graphics) { 
+void Eneagono::dibujar(Graphics^ graphics) {
     Color colorDelCuerpo;
     if (color == 1) {
         colorDelCuerpo = Color::Red;
@@ -17,12 +17,18 @@ void Cuadrilatero::dibujar(Graphics^ graphics) {
         colorDelCuerpo = Color::Blue;
     }
 
-    array<Point>^ puntos = gcnew array<Point>(4);
-    puntos[0] = Point((int)x, (int)y);                    // Arriba-izq
-    puntos[1] = Point((int)(x + ancho), (int)y);          // Arriba-der
-    puntos[2] = Point((int)(x + ancho), (int)(y + alto)); // Abajo-der
-    puntos[3] = Point((int)x, (int)(y + alto));           // Abajo-izq
+    array<Point>^ puntos = gcnew array<Point>(9);
+    float cx = x + ancho / 2.0f;
+    float cy = y + alto / 2.0f;
+    float radio = Math::Min(ancho, alto) * 0.45f;
+    float angIni = Math::PI / 9;
 
+    for (int i = 0; i < 9; i++) {
+        float ang = angIni + (2 * Math::PI * i / 9);
+        int px = (int)(cx + radio * cos(ang));
+        int py = (int)(cy + radio * sin(ang));
+        puntos[i] = Point(px, py);
+    }
     SolidBrush^ brush = gcnew SolidBrush(colorDelCuerpo);
     graphics->FillPolygon(brush, puntos);
 
