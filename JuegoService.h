@@ -19,7 +19,7 @@ public:
     // Inicialización
     JuegoService(int ancho, int alto);
     ~JuegoService();
-
+	//aumentar la dificultad
     // Mover jugador
     void moverCirculo(int dy);
 

@@ -123,17 +123,13 @@
     <ClCompile Include="FrmFiguras.cpp" />
     <ClCompile Include="FrmMoverFiguraTecla.cpp" />
     <ClCompile Include="FrmMovimientoCasa.cpp" />
-    <ClCompile Include="Hamp.cpp" />
     <ClCompile Include="JuegoService.cpp" />
     <ClCompile Include="Linea.cpp" />
-    <ClCompile Include="Mario.cpp" />
-    <ClCompile Include="Pikachu.cpp" />
     <ClCompile Include="MovimientoCasaService.cpp" />
     <ClCompile Include="MundoHampService.cpp" />
     <ClCompile Include="Principal.cpp" />
     <ClCompile Include="Rectangulo.cpp" />
     <ClCompile Include="Rombo.cpp" />
-    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Triangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -162,16 +158,12 @@
     <ClInclude Include="FrmMovimientoCasa.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Hamp.h" />
     <ClInclude Include="JuegoService.h" />
     <ClInclude Include="Linea.h" />
-    <ClInclude Include="Mario.h" />
     <ClInclude Include="MovimientoCasaService.h" />
-    <ClInclude Include="Pikachu.h" />
     <ClInclude Include="MundoHampService.h" />
     <ClInclude Include="Rectangulo.h" />
     <ClInclude Include="Rombo.h" />
-    <ClInclude Include="Sprite.h" />
     <ClInclude Include="Triangulo.h" />
   </ItemGroup>
   <ItemGroup>
