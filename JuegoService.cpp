@@ -20,7 +20,7 @@ JuegoService::JuegoService(int ancho, int alto) {
     // Triángulo
     Triangulo* tri = new Triangulo(xDerecha, 50, 80, 80, 0, 255, 0, true);
     tri->setNumero(rand() % 10 + 1);
-    figurasFijas.push_back(tri);
+    //figurasFijas.push_back(tri);
 
     // Rectángulo (Cuadrado)
     Rectangulo* rect = new Rectangulo(xDerecha, 50 + espacio, 80, 80, 255, 0, 0, true);
@@ -59,7 +59,7 @@ void JuegoService::lanzarFigura() {
     Figura* figura = nullptr;
 
     if (tipo == 0) {
-        figura = new Triangulo(x, y, 80, 80, 0, 255, 0, true);
+       // figura = new Triangulo(x, y, 80, 80, 0, 255, 0, true);
     }
     else if (tipo == 1) {
         figura = new Rectangulo(x, y, 80, 80, 255, 0, 0, true);

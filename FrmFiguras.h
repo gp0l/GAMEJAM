@@ -442,7 +442,7 @@ namespace Semana10 {
 			figura = new Cuadrado(x, y, tamano, r, g, b, relleno);
 		}
 		else if (tipoFigura == "Triangulo") {
-			figura = new Triangulo(x, y, ancho, alto, r, g, b, relleno);
+		//	figura = new Triangulo(x, y, ancho, alto, r, g, b, relleno);
 		}
 		else if (tipoFigura == "Rombo") {
 			figura = new Rombo(x, y, ancho, alto, r, g, b, relleno);

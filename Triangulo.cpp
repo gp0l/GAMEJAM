@@ -2,25 +2,30 @@
 
 
 Triangulo::Triangulo(int x, int y, int ancho, int alto, int r, int g, int b, bool relleno)
-    : Figura(x, y, ancho, alto, r, g, b, relleno) {
+    : Poligono(x, y, ancho, alto, 3, relleno) {
 }
 
 void Triangulo::dibujar(Graphics^ graphics) {
-    Color color = Color::FromArgb(r, g, b);
-
+    Color colorDelCuerpo;
+    if (color == 1) {
+        colorDelCuerpo = Color::Red;
+    }
+    else if (color == 2) {
+        colorDelCuerpo = Color::Yellow;
+    }
+    else {
+        colorDelCuerpo = Color::Blue;
+	}
+    
     array<Point>^ puntos = gcnew array<Point>(3);
     puntos[0] = Point(x + ancho / 2, y);           // Punto superior (centro)
     puntos[1] = Point(x, y + alto);                // Punto inferior izquierdo
     puntos[2] = Point(x + ancho, y + alto);        // Punto inferior derecho
+	 //Calcular los vértices del triángulo equilátero
+   
 
-    if (relleno) {
-        SolidBrush^ brush = gcnew SolidBrush(color);
-        graphics->FillPolygon(brush, puntos);
-    }
-    else {
-        Pen^ pen = gcnew Pen(color, 2);
-        graphics->DrawPolygon(pen, puntos);
-    }
+    SolidBrush^ brush = gcnew SolidBrush(colorDelCuerpo);
+    graphics->FillPolygon(brush, puntos);
 
     // Dibujar número en el centro
     if (numero > 0) {

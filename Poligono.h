@@ -1,35 +1,33 @@
 #pragma once
-
 using namespace System;
 using namespace System::Drawing;
+enum Direccion { IZQUIERDA, DERECHA, ARRIBA, ABAJO, NINGUNO };
 
-class Figura {
+class Poligono {
 protected:
     int x, y;
     int ancho, alto;
-    int r, g, b;
-    bool relleno;
+    int color;
     int dirX, dirY;
-    bool seMueve;
+    bool movimientoAutonomo;
     int numero;
-    float sumaDeLados;
+    float sumaDeAngulos;
 
 public:
-    Figura(int x, int y, int ancho, int alto, int r, int g, int b, bool relleno);    
-    ~Figura();
-	int getSumaDeLados();
+    Poligono(int x, int y, int ancho, int alto, int lados, bool movimientoAutonomo);
+    Poligono(int x, int y, int ancho, int alto, int lados, bool movimientoAutonomo, int numero);
+    ~Poligono();
+
+    int getSumaDeLados();
     int getX();
     int getY();
     int getAncho();
     int getAlto();
-    int getR();
-    int getG();
-    int getB();
-    bool getRelleno();
+	int getColor();
+	bool getMovimientoAutonomo();
     int getDirX();
     int getDirY();
-    bool getSeMueve();
-    int getNumero(); 
+    int getNumero();
 
     void setX(int x);
     void setY(int y);

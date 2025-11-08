@@ -19,7 +19,7 @@ CompetenciaService::CompetenciaService(int ancho, int alto) {
     triangulo->setSeMueve(true);
     triangulo->setDirX(1);
     triangulo->setDirY(0);
-    figuras.push_back(triangulo);
+// figuras.push_back(triangulo);
     puntajes.push_back(0);
 
     // Rectangulo (medio)
