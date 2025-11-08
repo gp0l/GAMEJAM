@@ -9,7 +9,6 @@
 #include "FrmMoverFiguraTecla.h"
 #include "FrmCompetencia.h"
 #include "FrmMovimientoCasa.h"
-#include "FrmMundoHamp.h"
 
 
 namespace Semana10 {
@@ -82,7 +81,7 @@ namespace Semana10 {
 	private: System::Windows::Forms::Button^ btnCompetencia;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ btnMundoHamp;
+
 
 		   /// <summary>
 		   /// Variable del dise�ador necesaria.
@@ -114,7 +113,6 @@ namespace Semana10 {
 			   this->btnCompetencia = (gcnew System::Windows::Forms::Button());
 			   this->label1 = (gcnew System::Windows::Forms::Label());
 			   this->button1 = (gcnew System::Windows::Forms::Button());
-			   this->btnMundoHamp = (gcnew System::Windows::Forms::Button());
 			   this->groupBoxFiguras->SuspendLayout();
 			   this->SuspendLayout();
 			   // 
@@ -131,7 +129,6 @@ namespace Semana10 {
 			   // 
 			   // groupBoxFiguras
 			   // 
-			   this->groupBoxFiguras->Controls->Add(this->btnMundoHamp);
 			   this->groupBoxFiguras->Controls->Add(this->btnLinea);
 			   this->groupBoxFiguras->Controls->Add(this->btnCasa);
 			   this->groupBoxFiguras->Controls->Add(this->btnRombo);
@@ -313,17 +310,6 @@ namespace Semana10 {
 			   this->button1->UseVisualStyleBackColor = true;
 			   this->button1->Click += gcnew System::EventHandler(this, &FrmFiguras::button1_Click);
 			   // 
-			   // btnMundoHamp
-			   // 
-			   this->btnMundoHamp->Location = System::Drawing::Point(27, 383);
-			   this->btnMundoHamp->Margin = System::Windows::Forms::Padding(4);
-			   this->btnMundoHamp->Name = L"btnMundoHamp";
-			   this->btnMundoHamp->Size = System::Drawing::Size(213, 37);
-			   this->btnMundoHamp->TabIndex = 7;
-			   this->btnMundoHamp->Text = L"Mundo HAMP";
-			   this->btnMundoHamp->UseVisualStyleBackColor = true;
-			   this->btnMundoHamp->Click += gcnew System::EventHandler(this, &FrmFiguras::btnMundoHamp_Click);
-			   // 
 			   // FrmFiguras
 			   // 
 			   this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -412,10 +398,7 @@ namespace Semana10 {
 		formulario->Show();
 	}
 
-	private: System::Void btnMundoHamp_Click(System::Object^ sender, System::EventArgs^ e) {
-		FrmMundoHamp^ formulario = gcnew FrmMundoHamp();
-		formulario->Show();
-	}
+	
 
 
 	// M�todo auxiliar

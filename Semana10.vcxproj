@@ -123,7 +123,6 @@
     <ClCompile Include="FrmFiguras.cpp" />
     <ClCompile Include="FrmMoverFiguraTecla.cpp" />
     <ClCompile Include="FrmMovimientoCasa.cpp" />
-    <ClCompile Include="FrmMundoHamp.cpp" />
     <ClCompile Include="Hamp.cpp" />
     <ClCompile Include="JuegoService.cpp" />
     <ClCompile Include="Linea.cpp" />
@@ -163,9 +162,6 @@
     <ClInclude Include="FrmMovimientoCasa.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="FrmMundoHamp.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Hamp.h" />
     <ClInclude Include="JuegoService.h" />
     <ClInclude Include="Linea.h" />
@@ -190,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovimientoCasa.resx">
       <DependentUpon>FrmMovimientoCasa.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMundoHamp.resx">
-      <DependentUpon>FrmMundoHamp.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
